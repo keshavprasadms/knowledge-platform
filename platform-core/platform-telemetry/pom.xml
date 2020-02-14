@@ -4,11 +4,11 @@
 	<parent>
 		<artifactId>platform-core</artifactId>
 		<groupId>org.sunbird</groupId>
-		<version>1.0-SNAPSHOT</version>
+		<version>1.0.0</version>
 	</parent>
 	<groupId>org.sunbird</groupId>
 	<artifactId>platform-telemetry</artifactId>
-	<version>1.0-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>Platform Telemetry</name>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -17,7 +17,7 @@
 		<dependency>
 			<groupId>org.sunbird</groupId>
 			<artifactId>platform-common</artifactId>
-			<version>1.0-SNAPSHOT</version>
+			<version>1.0.0</version>
 		</dependency>
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
