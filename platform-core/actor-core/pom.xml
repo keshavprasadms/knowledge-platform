@@ -5,7 +5,7 @@
 	<parent>
 		<artifactId>platform-core</artifactId>
 		<groupId>org.sunbird</groupId>
-		<version>1.0-SNAPSHOT</version>
+		<version>1.0.1</version>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 
@@ -19,7 +19,7 @@
 		<dependency>
 			<groupId>org.sunbird</groupId>
 			<artifactId>platform-common</artifactId>
-			<version>1.0-SNAPSHOT</version>
+			<version>1.0.1</version>
 		</dependency>
 		<dependency>
 			<groupId>com.typesafe.akka</groupId>

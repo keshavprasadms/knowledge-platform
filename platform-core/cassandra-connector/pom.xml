@@ -5,7 +5,7 @@
 	<parent>
 		<artifactId>platform-core</artifactId>
 		<groupId>org.sunbird</groupId>
-		<version>1.0-SNAPSHOT</version>
+		<version>1.0.1</version>
 	</parent>
 
 	<artifactId>cassandra-connector</artifactId>
@@ -32,7 +32,7 @@
 		<dependency>
 			<groupId>org.sunbird</groupId>
 			<artifactId>platform-telemetry</artifactId>
-			<version>1.0-SNAPSHOT</version>
+			<version>1.0.1</version>
 			<type>jar</type>
 		</dependency>
 		<dependency>
