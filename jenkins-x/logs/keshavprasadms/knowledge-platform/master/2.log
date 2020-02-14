@@ -1,0 +1,95 @@
+
+Showing logs for build [32mkeshavprasadms-knowledge-platfo-7m6dd-2[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-tszxm[0m
+{"level":"warn","ts":1581680076.0746589,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1581680076.0752103,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mkeshavprasadms-knowledge-platfo-7m6dd-2[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-j2nvq[0m
+{"level":"warn","ts":1581680076.765177,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1581680076.7701104,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mkeshavprasadms-knowledge-platfo-7m6dd-2[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mkeshavprasadms-knowledge-platfo-7m6dd-2[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-keshavprasadms-knowledge-platfo-7m6dd-lclfc[0m
+{"level":"warn","ts":1581680084.898669,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1581680087.449418,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/keshavprasadms/knowledge-platform.git @ v1.0.1 in path /workspace/source"}
+
+Showing logs for build [32mkeshavprasadms-knowledge-platfo-7m6dd-2[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:9257f210a69a578f57669006050ef441e87e22ba
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mkeshavprasadms-knowledge-platfo-7m6dd-2[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Generated Git credentials file /workspace/xdg_config/git/credentials
+
+Showing logs for build [32mkeshavprasadms-knowledge-platfo-7m6dd-2[0m stage [32mfrom-build-pack[0m and container [32mstep-build-mvn-deploy[0m
+Picked up _JAVA_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -Dsun.zip.disableMemoryMapping=true -XX:+UseParallelGC -XX:MinHeapFreeRatio=5 -XX:MaxHeapFreeRatio=10 -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Xms10m -Xmx192m
+OpenJDK 64-Bit Server VM warning: If the number of processors is expected to increase from one, then you should configure the number of parallel GC threads appropriately using -XX:ParallelGCThreads=N
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Sunbird Knowledge Platform                                         [pom]
+[INFO] platform-core                                                      [pom]
+[INFO] platform-common                                                    [jar]
+[INFO] Platform Telemetry                                                 [jar]
+[INFO] actor-core                                                         [jar]
+[INFO] schema-validator                                                   [jar]
+[INFO] platform-cache                                                     [jar]
+[INFO] cassandra-connector                                                [jar]
+[INFO] ontology-engine                                                    [pom]
+[INFO] graph-common                                                       [jar]
+[INFO] graph-dac-api                                                      [jar]
+[INFO] graph-core                                                         [jar]
+[INFO] parseq                                                             [jar]
+[INFO] graph-engine_2.11                                                  [jar]
+[INFO] learning-api                                                       [pom]
+[INFO] hierarchy-manager                                                  [jar]
+[INFO] orchestrator                                                       [jar]
+[INFO] content-service                                                  [play2]
+[INFO] 
+[INFO] -------------------< org.sunbird:knowledge-platform >-------------------
+[INFO] Building Sunbird Knowledge Platform 1.0.1                         [1/18]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ knowledge-platform ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ knowledge-platform ---
+[INFO] Installing /workspace/source/pom.xml to /root/.mvnrepository/org/sunbird/knowledge-platform/1.0.1/knowledge-platform-1.0.1.pom
+[INFO] 
+[INFO] --- maven-deploy-plugin:2.8.2:deploy (default-deploy) @ knowledge-platform ---
+[INFO] Using alternate deployment repository nexus::default::http://nexus/repository/maven-releases/
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Sunbird Knowledge Platform 1.0.1:
+[INFO] 
+[INFO] Sunbird Knowledge Platform ......................... FAILURE [ 13.209 s]
+[INFO] platform-core ...................................... SKIPPED
+[INFO] platform-common .................................... SKIPPED
+[INFO] Platform Telemetry ................................. SKIPPED
+[INFO] actor-core ......................................... SKIPPED
+[INFO] schema-validator ................................... SKIPPED
+[INFO] platform-cache ..................................... SKIPPED
+[INFO] cassandra-connector ................................ SKIPPED
+[INFO] ontology-engine .................................... SKIPPED
+[INFO] graph-common ....................................... SKIPPED
+[INFO] graph-dac-api ...................................... SKIPPED
+[INFO] graph-core ......................................... SKIPPED
+[INFO] parseq ............................................. SKIPPED
+[INFO] graph-engine_2.11 .................................. SKIPPED
+[INFO] learning-api ....................................... SKIPPED
+[INFO] hierarchy-manager .................................. SKIPPED
+[INFO] orchestrator ....................................... SKIPPED
+[INFO] content-service .................................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  18.210 s
+[INFO] Finished at: 2020-02-14T11:35:11Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-deploy-plugin:2.8.2:deploy (default-deploy) on project knowledge-platform: Failed to deploy artifacts: Could not transfer artifact org.sunbird:knowledge-platform:pom:1.0.1 from/to nexus (http://nexus/repository/maven-releases/): Transfer failed for http://nexus/repository/maven-releases/org/sunbird/knowledge-platform/1.0.1/knowledge-platform-1.0.1.pom 400 Repository does not allow updating assets: maven-releases -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[31m
+Pipeline failed on stage 'from-build-pack' : container 'step-build-mvn-deploy'. The execution of the pipeline has stopped.[0m
